@@ -1,0 +1,14 @@
+._my-section2 {
+    background: url(https://ossweb-img.qq.com/upload/adw/image/20191118/8db79c73d28b468ea13c065973534c18.jpeg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+._my-section2-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+}
