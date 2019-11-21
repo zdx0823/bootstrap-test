@@ -16,3 +16,7 @@
 ._chunk-img {
     transform: scale(1.1);
 }
+
+._content img {
+    width: 100%;
+}
