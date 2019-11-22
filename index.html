@@ -5,7 +5,7 @@ layout: default
 <h1 class="my-4">{{site.author}}</h1>
 
 <!-- Blog Post -->
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <div class="card mb-4">
   <img class="card-img-top" src="{{post.thumb}}" alt="Card image cap">
   <div class="card-body">
@@ -16,3 +16,22 @@ layout: default
   <div class="card-footer text-muted">发表于&nbsp;{{post.date | date: '%Y年%m月%d日'}}</div>
 </div>
 {% endfor %}
+
+<ul class="pagination justify-content-center mb-4">
+  
+  {% if paginator.previous_page %}
+    <li class="page-item">
+      <a class="page-link" href="{{site.baseurl}}{{paginator.previous_page_path}}">&larr; 上一页</a>
+    </li>
+  {% else %}
+    <a class="page-link" href="javascript:;">没有了</a>
+  {% endif %}
+  
+  {% if paginator.next_page %}
+    <li class="page-item">
+      <a class="page-link" href="{{site.baseurl}}{{paginator.next_page_path}}">下一页 &rarr;</a>
+    </li>
+  {% else %}
+    <a class="page-link" href="javascript:;">没有了</a>
+  {% endif %}
+</ul>

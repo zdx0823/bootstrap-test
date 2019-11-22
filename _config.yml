@@ -1,2 +1,8 @@
 baseurl: /bootstrap-test/
 author: '蜜蜂老牛黄瓜'
+
+# 分页配置
+paginate: 4
+
+# 制定要使用的插件，github上默认安装的插件
+plugins: [jekyll-paginate]
