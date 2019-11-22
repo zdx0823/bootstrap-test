@@ -3,6 +3,17 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
  */
+
+html, body {
+  height: 100%;
+}
+
 body {
+  display: flex;
   padding-top: 56px;
+  flex-flow: column;
+}
+
+.container {
+  flex: 1;
 }
